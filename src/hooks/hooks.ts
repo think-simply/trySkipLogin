@@ -27,13 +27,6 @@ Before(async function (this: any) {
   adminPage = await adminContext.newPage();
   pageFixture.adminPage = adminPage;
 
-  // Create context with stored credentials for staff
-  staffContext = await browser.newContext({
-    storageState: authConfig.staff.storageState
-  });
-  staffPage = await staffContext.newPage();
-  pageFixture.staffPage = staffPage;
-
   console.log("Creating new contexts and pages with auth...");
   this.page = adminPage; // Default to admin page
 });
@@ -49,12 +42,4 @@ After(async function (this: any, { pickle, result }) {
   }
   await this.page.close();
 
-  if (this.page === adminPage) {
-    await adminContext.close();
-  } else if (this.page === staffPage) {
-    await staffContext.close();
-  } else {
-    console.warn("Unknown page encountered, closing default context");
-    await adminContext.close();
-  }
 });

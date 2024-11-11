@@ -13,9 +13,8 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 2820483,
-              "error_message": "Error reading storage state from playwright/.auth/admin.json:\nENOENT: no such file or directory, open 'playwright/.auth/admin.json'\nError: ENOENT: no such file or directory, open 'playwright/.auth/admin.json'"
+              "status": "passed",
+              "duration": 272314474
             }
           },
           {
@@ -27,69 +26,55 @@
               "location": "src/test/steps/dashboardSteps.ts:6"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4665626325
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "User login with the admin account: \"Admin\",\"Admin@123\"",
+            "name": "User clicks on Messages on left menu",
             "match": {
-              "location": "src/test/steps/dashboardSteps.ts:49"
+              "location": "src/test/steps/dashboardSteps.ts:53"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 559831431
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "User clicks on Messages on left menu",
-            "match": {
-              "location": "src/test/steps/dashboardSteps.ts:53"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
             "name": "User send a private message",
             "match": {
               "location": "src/test/steps/messageStep.ts:7"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3591667834
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 11,
+            "line": 10,
             "name": "Message has been sent successfully",
             "match": {
               "location": "src/test/steps/messageStep.ts:11"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 3471663220
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 1216963,
-              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at World.<anonymous> (/home/nttheu/Demoprojetcs/Admidio/Admidio/src/hooks/hooks.ts:45:21)"
+              "status": "passed",
+              "duration": 18703461
             }
           }
         ],
@@ -101,6 +86,90 @@
           {
             "name": "@now",
             "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "messages-functionality;tc_27-:-delete-a-private-message",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "TC_27 : Delete a private message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 173487615
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to page",
+            "match": {
+              "location": "src/test/steps/dashboardSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6287811641
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "User clicks on Messages on left menu",
+            "match": {
+              "location": "src/test/steps/dashboardSteps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 535861578
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "User removes a private message",
+            "match": {
+              "location": "src/test/steps/messageStep.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2789094557
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Message has been deleted successfully",
+            "match": {
+              "location": "src/test/steps/messageStep.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1204794642
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16449942
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@high",
+            "line": 12
           }
         ],
         "type": "scenario"
