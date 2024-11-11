@@ -8,7 +8,7 @@ This is a sample automation framework using Playwright,Cucumber and Typescript.(
    cd internal
 
 3. Install following packages
-   cpm install
+   npm install
 
 4. Run testcase by using following command:
    npm test
