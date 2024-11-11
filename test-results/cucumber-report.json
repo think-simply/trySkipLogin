@@ -1,0 +1,116 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "messages-functionality;tc_26-:-write-a-private-message",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "TC_26 : Write a private message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 2820483,
+              "error_message": "Error reading storage state from playwright/.auth/admin.json:\nENOENT: no such file or directory, open 'playwright/.auth/admin.json'\nError: ENOENT: no such file or directory, open 'playwright/.auth/admin.json'"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User navigates to page",
+            "match": {
+              "location": "src/test/steps/dashboardSteps.ts:6"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User login with the admin account: \"Admin\",\"Admin@123\"",
+            "match": {
+              "location": "src/test/steps/dashboardSteps.ts:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "User clicks on Messages on left menu",
+            "match": {
+              "location": "src/test/steps/dashboardSteps.ts:53"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User send a private message",
+            "match": {
+              "location": "src/test/steps/messageStep.ts:7"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Message has been sent successfully",
+            "match": {
+              "location": "src/test/steps/messageStep.ts:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1216963,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'screenshot')\n    at World.<anonymous> (/home/nttheu/Demoprojetcs/Admidio/Admidio/src/hooks/hooks.ts:45:21)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@high",
+            "line": 6
+          },
+          {
+            "name": "@now",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "messages-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Messages Functionality",
+    "tags": [],
+    "uri": "src/test/features/message.feature"
+  }
+]

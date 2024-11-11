@@ -1,0 +1,13 @@
+{
+    "username":"#plg_usr_login_name",
+    "password":"#plg_usr_password",
+    "signinButton": "#next_page",
+    "registrationLink": "//li[@class='nav-item']/child::a[text() = 'Registration']",
+    "forgotPassLink": "//a[@class='btn admidio-icon-link' and contains(text(), 'Password forgotten?')]",
+    "loginSuccess": "//h3[text()='Logged in as']",
+    "announceMenu": "#announcements",
+    "eventMenu":"#events",
+    "messageMenu": "#messages",
+    "groupAndRole": "#groups-roles"
+
+}

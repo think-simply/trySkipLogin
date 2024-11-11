@@ -1,0 +1,14 @@
+{
+    
+"createPrivateMess": "#menu_item_messages_new_pm",
+"toMail": "//input[@placeholder='Select from list']",
+"selectedOption": "//ul[@id='select2-msg_to-results']//li[1]",
+"subject": "#msg_subject",
+"message": "#msg_body",
+"sendButton": "#btn_send",
+"subjectInList": "(//td[contains(@class,'text-left')])[2]",
+"removeIcon": "(//i[contains(@title,'Remove message')])[1]",
+"confirmYes": "#admButtonYes"
+
+
+}

@@ -1,0 +1,20 @@
+{
+    "addEntry": "#menu_item_announcement_add",
+    "titlebox": "#ann_headline",
+    "category": "#ann_cat_id",
+    "iFrametextbox": "iframe[title='Rich Text Editor\\, ann_description']",
+    "saveButton": "#btn_save",
+    "newAnnounce": "(//div[contains(@class,'card-header')])[1]",
+    "actionIcon": "(//i[contains(@class,'fas fa-chevron-circle-down')])[1]",
+    "optionCopy": "//div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item btn'][normalize-space()='Copy']",
+    "optionUpdate": "//div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item btn'][normalize-space()='Edit']",
+    "optionDelete": "//div[@class='dropdown-menu dropdown-menu-right show']//a[@class='dropdown-item btn openPopup'][normalize-space()='Delete']",
+    "confirmYes": "#admButtonYes",
+    "editCate": "#menu_item_announcement_categories",
+    "createCate": "#menu_item_categories_add",
+    "firstName": "#cat_name",
+    "categoryList": "//th[normalize-space()='Title']",
+    "editCaButton": "(//i[contains(@data-original-title,'Edit')])[1]",
+    "firstElement": "(//td[contains(@style,'text-align: left;')])[1]//a",
+    "deleteCaButton": "(//i[contains(@data-original-title,'Delete')])[1]"
+}

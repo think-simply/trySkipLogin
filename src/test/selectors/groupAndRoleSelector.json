@@ -1,0 +1,25 @@
+{
+    "createRole": "#menu_item_groups_roles_add",
+    "name": "#rol_name",
+    "saveButton": "#btn_save",
+    "categoryGRpage": "//h1[@class='admidio-module-headline']",
+    "editButton": "(//i[@class='fas fa-edit'])[1]",
+    "titleRole": "(//h5[@class='card-title'])[1]",
+    "description": "#rol_description",
+    "confirmYes": "#admButtonYes",
+    "deleteIcon": "(//i[@data-original-title='Delete role'])[1]",
+
+    "editCategory": "#menu_item_groups_roles_maintain_categories",
+    "createCategory": "#menu_item_categories_add",
+    "nameCate": "#cat_name",
+    "editIconCate":"(//i[contains(@data-original-title,'Edit')])[1]",
+    "deleteIconCate":"(//i[contains(@data-original-title,'Delete')])[6]",
+    "newCate": "(//tr[last()]//td[@style='text-align: left;'])[1]",
+    "firstTitle": "(//tr//td[@style='text-align: left;'])[1]",
+
+    "configList": "#menu_item_groups_own_list",
+    "selectConfig": "//select[@id='sel_select_configuration']"
+    
+
+    
+}
