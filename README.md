@@ -10,7 +10,9 @@ This is a sample automation framework using Playwright,Cucumber and Typescript.(
 3. Install following packages
    npm install
 
-4. Run testcase by using following command:
+4. Run npx playwright codegen --save-storage=playwright/.auth/admin.json to store cookie and session for all tests
+
+5. Run testcase by using following command:
    npm test
 
-5. View the test report in : index.html
+6. View the test report in : index.html
