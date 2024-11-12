@@ -1,8 +1,16 @@
 import { chromium } from '@playwright/test';
 import { authConfig } from './auth.config';
-const locator = require("../selectors/dashboardSelector.json");
+import fs from 'fs';
+import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config();
 
 async function globalSetup() {
+  // Tạo thư mục .auth nếu chưa tồn tại
+  const authDir = path.join(process.cwd(), 'playwright/.auth');
+  if (!fs.existsSync(authDir)) {
+    fs.mkdirSync(authDir, { recursive: true });
+  }
   const browser = await chromium.launch();
  
   // Setup for admin
@@ -14,7 +22,9 @@ async function globalSetup() {
   await adminPage.click('#next_page');
   // Wait for login to complete - adjust selector as needed
   await adminPage.waitForSelector('h3:text("Logged in as")');
+  console.log('Storing auth state...');
   await adminContext.storageState({ path: authConfig.admin.storageState });
+  console.log('Auth state saved to:', authConfig.admin.storageState);
 
 
   await browser.close();
