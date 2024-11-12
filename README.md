@@ -15,10 +15,10 @@ This is a sample automation framework using Playwright,Cucumber and Typescript.(
    npm test : to run all testcase
 
    #This repo to show the way setup auto skip login:
-   first- create authen.config.ts file
-   second- create global-setup.ts file
-   third- Edit hooks to get data from storage of file auth.config.ts (this file get session from  path.join(process.cwd(), 'playwright/.auth/admin.json'))
-   fourth- update package.json to add "auth:setup": "cross-env NODE_OPTIONS=\"--loader ts-node/esm\" node global-setup.ts" into script
-   fifth- update playwright.config.ts - add globalSetup: require.resolve('./global-setup.ts'),  and storageState: path.join(process.cwd(), 'playwright/.auth/admin.json'),
-   sixth- install ts node by run npm install --save-dev ts-node
-   last- run step 4
+   1. create authen.config.ts file
+   2. create global-setup.ts file
+   3. Edit hooks to get data from storage of file auth.config.ts (this file get session from  path.join(process.cwd(), 'playwright/.auth/admin.json'))
+   4. update package.json to add "auth:setup": "cross-env NODE_OPTIONS=\"--loader ts-node/esm\" node global-setup.ts" into script
+   5. update playwright.config.ts - add globalSetup: require.resolve('./global-setup.ts'),  and storageState: path.join(process.cwd(), 'playwright/.auth/admin.json'),
+   6. install ts node by run npm install --save-dev ts-node
+   7. run step 4
